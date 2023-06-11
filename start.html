@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.T.R</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <section id="main">
+        <div class="first-container">
+            <div class="upper-container">
+                <div class="tables score-board" style="display: flex; justify-content: center; width: auto;">
+                    <div>
+                        <table class="score-table">
+                            <h3 class="h3">Record of Scores</h3>
+                            <p class="p">Input the scores of your students here!</p>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                    <th colspan="2">#</th>
+                                    <th colspan="4">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="input-rows-scores">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 40px; border: 2px solid #90b1bb;">
+                    <div class="infos-container">
+                        <div class="info-section">
+                            <label for="quarter" class="label">Quarter</label>
+                            <input type="text" name="Quarter" id="Quarter" placeholder="..........">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">School Year</label>
+                            <input type="text" name="school-year" id="school-year" placeholder="..........">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="..........">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Section</label>
+                            <input type="text" name="section" id="section" placeholder="..........">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label"># of items</label>
+                            <input type="number" name="num-of-items" id="num-of-items" placeholder="0">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Number of Takers(n)</label>
+                            <input type="number" id="total-students-input" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="infos-container">
+                        <div class="info-section">
+                            <label for="" class="label">Mean</label>
+                            <input type="number" name="mean" id="mean" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Standard Deviation</label>
+                            <input type="number" id="sd" name="sd" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Highest Score</label>
+                            <input type="number" name="high-score" id="high-score" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Lowest Score</label>
+                            <input type="number" id="lowest-score" name="lowest-score" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Mastery Level</label>
+                            <input type="text" id="mastery-level" name="mastery-level" placeholder="0" disabled style="text-align: center; width: 50px;">
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Frequency of Lowest Item in FCR</label>
+                            <input type="number" id="lowest-item" name="lowest-item" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="quarter" class="label">Items got Lowest Correct Response</label>
+                            <input type="number" name="lowest-correct" id="lowest-correct" placeholder="0" disabled>
+                        </div>
+                        <div class="info-section">
+                            <label for="" class="label">Lowest Correct Response</label>
+                            <input type="number" name="lowest-response" id="lowest-response" placeholder="0" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="foc-section">
+                <div class="tables table-width">
+                    <h3 class="h3 h3-2">Frequency of Correct</h3>
+                    <div class="scroll">
+                        <table class="FOC-container">
+                            <thead>
+                                <tr>
+                                    <th>Item #</th>
+                                    <th>FCR</th>
+                                    <th>%</th>
+                                </tr>
+                            </thead>
+                            <tbody id="input-rows"></tbody>
+                        </table>
+                    </div>
+                    <span class="scroll-up">scroll up</span>
+                </div>
+                <div class="tables table-width">
+                    <h3 class="h3 h3-2">Frequency of Error</h3>
+                    <div class="scroll">
+                        <table class="FOC-container">
+                            <thead>
+                                <tr>
+                                    <th>Item #</th>
+                                    <th>FCE</th>
+                                    <th>%</th>
+                                </tr>
+                            </thead>
+                            <tbody id="input-rows-error"></tbody>
+                        </table>
+                    </div>
+                    <span class="scroll-up">scroll up</span>
+                </div>
+                <div class="tables table-width">
+                    <h3 class="h3 h3-2">Ranking of Item</h3>
+                    <div class="scroll">
+                        <table class="FOC-container">
+                            <div class="scroll">
+                            <thead>
+                                <tr>
+                                    <th>Item #</th>
+                                    <th>Ranking</th>
+                                </tr>
+                            </thead>
+                            <tbody id="input-rows-ranking"></tbody>
+                        </table>
+                    </div>
+                    <span class="scroll-up">scroll up</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button-section">
+        <button id="print">Print</button>
+    </div>
+    <script src="start.js"></script>
+  </body>
+</html>

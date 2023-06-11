@@ -1,0 +1,238 @@
+* {
+    font-family: Gurmukhi MT;
+}
+
+body {
+    background-color: rgb(222, 221, 221);
+}
+
+section {
+    margin: 40px 10px;
+}
+
+.FOC-container td, .FOC-container thead {
+    border: 1px solid #90b1bb;
+    text-align: center;
+}
+
+.FOC-container th {
+    width: 20px;
+}
+
+.score-table td, .score-table thead {
+    border: 1px solid #90b1bb;
+    text-align: center;
+    width: 40px;
+}
+
+.FOC-container th, .score-table th {
+    border: 1px solid #90b1bb;
+    font-weight: bolder;
+    background-color: #a6e2f5;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 3px;
+}
+
+.FOC-container tr:nth-child(even), .score-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.FOC-container tr:nth-child(odd), .score-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #90b1bb;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.first-container, .second-container {
+    float: left;
+}
+
+.FOC-container {
+    width: 100%;
+}
+
+
+.second-container td {
+    font-size: 15px;
+}
+
+/* others */
+
+.label {
+    background-color: transparent;
+    font-size: 13px;
+    padding: 1px 10px;
+    max-width: fit-content;
+    min-width: 100px;
+}
+
+.info-section {
+    display: flex;
+    width: auto;
+    margin: 10px;
+    border-bottom: 1px solid #90b1bb;
+    justify-content: space-between;
+}
+
+.infos-container {
+    margin: 5px 15px;
+    width: -webkit-fill-available;
+}
+
+/* sections */
+.foc-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tables {
+    width: fit-content;
+}
+
+
+/* inputs */
+input[type="number"]{
+    border: none;
+    width: 50px;
+    background-color: transparent;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+
+input[type="text"] {
+    border: none;
+    width: 100px;
+    background-color: transparent;
+    text-align: start;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+
+/* text */
+.student-no, .foc-number, .item-ranking-number {
+    color: #8b8b8b;
+    font-size: 14px !important;
+    padding: 3px;
+}
+
+.h3, .p {
+    margin: 0;
+}
+
+.h3-2 {
+    margin-bottom: 17px;
+    
+}
+
+.p {
+    font-size: 15px;
+    color: black;
+}
+
+.second-container .p {
+    text-align: center;
+}
+
+.table-width {
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.scroll {
+    height: 683px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.scroll-up {
+    font-size: 10px;
+    color: gray;
+}
+
+.button-section {
+    margin: 30px 50px;
+    width: -webkit-fit-content;
+    float: right;
+    position: sticky;
+    bottom: 20px;
+}
+
+button {
+    background-color: #5aa4bb;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 2px rgb(0, 98, 94);
+    border-radius: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .first-container, .second-container {
+        width: 100%;
+    }
+} 
+
+
+@media only screen and (min-width: 600px) {
+    .first-container, .second-container {
+        width: 100%;
+    }
+} 
+
+
+@media only screen and (min-width: 768px) {
+    .first-container, .second-container {
+        width: 100%;
+    }
+} 
+
+
+@media only screen and (min-width: 992px) {
+    .first-container, .second-container {
+        width: 70%;
+    }
+} 
+
+
+@media only screen and (min-width: 1200px) {
+    .first-container, .second-container {
+        width: 50%;
+    }
+}
